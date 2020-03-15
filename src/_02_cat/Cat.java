@@ -1,4 +1,4 @@
-package _02_cat;
+package _02_cat
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -7,18 +7,18 @@ package _02_cat;
 		/* Do the following things without changing the Cat class 
 	
 		* Create a CatRunner class in the cat package, with a main method that creates a Cat object.
-
-        * 1. Make the Cat meow
 		
+        * 1. Make the Cat meow
 		* 2. Get the Cat to print it's name
 
 		* 3. Kill the Cat! 
 		
 		*/
 
-
 public class Cat {
 
+public static void main(String[] args) {
+}
 	private String name;
 	private int lives = 9;
 
@@ -29,7 +29,6 @@ public class Cat {
 	void meow() {
 		System.out.println("meeeeeooooooooooowwwwwwwww!!");
 	}
-
 	public void printName() {
 		if (name == null)
 			System.out.println("i don't know my own name!");

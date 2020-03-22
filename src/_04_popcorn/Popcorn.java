@@ -31,6 +31,8 @@ class Microwave {
 		System.out.println("Microwave says: cook time is set to " + cookTime + " minutes.");
 	}
 
+	
+	
 	void startMicrowave() {
 		if (thingToBeCooked == null) {
 			System.out.println("Microwave says: there's nothing in the microwave!");

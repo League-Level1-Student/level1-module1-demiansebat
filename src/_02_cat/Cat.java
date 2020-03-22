@@ -1,4 +1,4 @@
-package _02_cat
+package _02_cat;
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -9,6 +9,7 @@ package _02_cat
 		* Create a CatRunner class in the cat package, with a main method that creates a Cat object.
 		
         * 1. Make the Cat meow
+        * 
 		* 2. Get the Cat to print it's name
 
 		* 3. Kill the Cat! 
@@ -16,9 +17,6 @@ package _02_cat
 		*/
 
 public class Cat {
-
-public static void main(String[] args) {
-}
 	private String name;
 	private int lives = 9;
 

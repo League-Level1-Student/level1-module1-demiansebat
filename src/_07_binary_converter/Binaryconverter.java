@@ -1,5 +1,8 @@
 package _07_binary_converter;
 
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -7,14 +10,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Binaryconverter {
-public static void main(String[] args) {
-JFrame frame=new JFrame();
-JPanel panel=new JPanel();
-JButton button=new JButton();
-button.addMouseListener(null);
-JLabel label=new JLabel();
-JTextField answer = new JTextField(20);
+public class Binaryconverter implements MouseListener {
 String convert(String input) {
     if(input.length() != 8){
         JOptionPane.showMessageDialog(null, "Enter 8 bits, silly!!!");
@@ -34,6 +30,44 @@ String convert(String input) {
         return "-";
     }
 }
+public void showButton() {
+	JFrame frame=new JFrame();
+	frame.setVisible(true);
+	JPanel panel=new JPanel();
+	JButton button=new JButton();
+	button.addMouseListener(this);
+	JLabel label=new JLabel();
+	JTextField answer = new JTextField(20);
+	frame.add(panel);
+	panel.add(label);
+	panel.add(answer);
+	panel.add(button);
+	frame.setName("Convert 8 bits of binary to ASCII");
+	frame.pack();
 }
-
+@Override
+public void mouseClicked(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void mouseEntered(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void mouseExited(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void mousePressed(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void mouseReleased(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
 }

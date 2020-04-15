@@ -11,6 +11,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Binaryconverter implements MouseListener {
+	JLabel label=new JLabel();
+	JTextField answer = new JTextField(20);
 String convert(String input) {
     if(input.length() != 8){
         JOptionPane.showMessageDialog(null, "Enter 8 bits, silly!!!");
@@ -36,8 +38,6 @@ public void showButton() {
 	JPanel panel=new JPanel();
 	JButton button=new JButton();
 	button.addMouseListener(this);
-	JLabel label=new JLabel();
-	JTextField answer = new JTextField(20);
 	frame.add(panel);
 	panel.add(label);
 	panel.add(answer);
@@ -47,8 +47,9 @@ public void showButton() {
 }
 @Override
 public void mouseClicked(MouseEvent arg0) {
-	// TODO Auto-generated method stub
-	
+	System.out.println("CLICK");
+	String letter=convert(answer.getText());
+	label.setText(letter);
 }
 @Override
 public void mouseEntered(MouseEvent arg0) {
